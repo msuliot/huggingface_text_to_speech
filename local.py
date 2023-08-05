@@ -13,13 +13,13 @@ def hf_local(text):
 
     inputs = processor(text=text, return_tensors="pt")
 
-    # load xvector containing speaker's voice characteristics from a dataset
     embeddings_dataset = load_dataset("Matthijs/cmu-arctic-xvectors", split="validation")
     speaker_embeddings = torch.tensor(embeddings_dataset[7306]["xvector"]).unsqueeze(0)
 
     speech = model.generate_speech(inputs["input_ids"], speaker_embeddings, vocoder=vocoder)
 
     sf.write("speech.wav", speech.numpy(), samplerate=16000)
+
 
 def main():
     text = "Hello, my name is Michael, and I want to thank you for watching my videos on getting started with Hugging Face"
