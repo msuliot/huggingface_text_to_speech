@@ -17,9 +17,9 @@ pip3 install -r requirements.txt
 # Instructions:
 
 This will download the model, tokenizer and dataset to your local machine and run on your local machine.
-microsoft/speecht5_tts
-microsoft/speecht5_hifigan
-Matthijs/cmu-arctic-xvectors
+- microsoft/speecht5_tts
+- microsoft/speecht5_hifigan
+- Matthijs/cmu-arctic-xvectors
 
 
 ## Run the local script
