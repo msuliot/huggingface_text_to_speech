@@ -2,6 +2,9 @@
 
 This is a simple example of how to use the Hugging Face Hub for text to speech.
 
+## YouTube Video Tutorial for this GitHub Repository
+[Hugging Face - Text to Speech](https://youtu.be/47hba0If7dY)
+
 ## The basics
 
 1. Must have Python3.
