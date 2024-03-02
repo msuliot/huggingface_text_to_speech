@@ -1,3 +1,10 @@
+# Author: Michael Suliot (Michael AI)
+# Date: 8/5/2023 - 1.0
+#   Update 3/2/2024 - 1.1 - QA
+# Version: Beta 1.1
+# Description: Get important information about a huggingface model
+# Project: huggingface_text_to_speech
+
 import requests
 import json
 

@@ -5,3 +5,4 @@ torch
 soundfile
 datasets
 nltk
+sentencepiece

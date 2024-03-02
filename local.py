@@ -1,3 +1,10 @@
+# Author: Michael Suliot (Michael AI)
+# Date: 8/5/2023 - 1.0
+# - Update 3/2/2024 - 1.1 - added misssing requirement and retested
+# Version: Beta 1.1
+# Description: Quick sample converting text to speech using Huggingface using local model
+# Project: huggingface_text_to_speech
+
 from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan
 from datasets import load_dataset
 import torch
@@ -33,8 +40,8 @@ def main():
         words = text.split()
         return len(words)
 
-    token_count = count_tokens(text)
-    word_count = count_words(text)
+    # token_count = count_tokens(text)
+    # word_count = count_words(text)
     total_length = len(text)
     print("token count:",count_tokens(text))
     print("word count:",count_words(text))
